@@ -23,7 +23,7 @@ coasting_enable = False
 coasting_speed = 90
 coasting_volume = 0.064
 cool_fan_enabled = True
-cool_fan_full_layer = 10
+cool_fan_full_layer = 3
 cool_min_layer_time = 10
 cool_min_speed = 15
 fill_outline_gaps = True
@@ -39,7 +39,7 @@ raft_base_thickness = =resolveOrValue('layer_height_0') * 1.2
 raft_interface_line_width = =line_width * 2
 raft_interface_speed = =raft_speed * 0.75
 raft_margin = 5
-raft_speed = 50
+raft_speed = 40
 retraction_extra_prime_amount = 0.096
 retraction_hop = 0.6
 retraction_hop_enabled = True
