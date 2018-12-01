@@ -1,4 +1,4 @@
-# Marlin 3D Printer Firmware for the Duplicator 6 autobuild edition
+# Marlin 3D Printer Firmware for the Duplicator 6 Stinger edition
 
 For prebuilt firmware version look in the [releases](https://github.com/kbailey204/Duplicator6-Stinger/releases) section.
 
