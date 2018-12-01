@@ -1,0 +1,67 @@
+[general]
+version = 4
+name = D6 MMU ABS Normal Quality
+definition = fdmprinter
+
+[metadata]
+setting_version = 5
+type = quality
+quality_type = normal
+weight = -1
+material = generic_abs
+
+[values]
+adhesion_type = raft
+adhesion_z_offset = 0.3
+layer_height = 0.1
+speed_slowdown_layers = 3
+support_enable = True
+support_type = buildplate
+alternate_extra_perimeter = True
+bottom_layers = 4
+coasting_enable = False
+coasting_speed = 90
+coasting_volume = 0.064
+cool_fan_enabled = True
+cool_fan_full_layer = 10
+cool_min_layer_time = 10
+cool_min_speed = 15
+fill_outline_gaps = True
+infill_line_width = =line_width
+infill_sparse_density = 30
+initial_layer_line_width_factor = 80
+line_width = 0.5
+outer_inset_first = True
+raft_airgap = 0.22
+raft_base_line_width = =machine_nozzle_size * 2
+raft_base_speed = 25
+raft_base_thickness = =resolveOrValue('layer_height_0') * 1.2
+raft_interface_line_width = =line_width * 2
+raft_interface_speed = =raft_speed * 0.75
+raft_margin = 5
+raft_speed = 50
+retraction_extra_prime_amount = 0.096
+retraction_hop = 0.6
+retraction_hop_enabled = True
+retraction_hop_only_when_collides = True
+speed_equalize_flow_enabled = True
+speed_infill = 120
+speed_layer_0 = 20
+speed_print = 70
+speed_travel = 120
+speed_wall = =speed_print / 2
+support_angle = 60
+support_interface_enable = True
+support_interface_height = 0.4
+support_interface_line_width = 0.35
+support_line_width = =line_width
+support_roof_line_width = =extruderValue(support_roof_extruder_nr, 'support_interface_line_width')
+support_use_towers = True
+support_xy_distance = 0.5
+support_xy_overrides_z = xy_overrides_z
+support_z_distance = 0.2
+top_layers = 4
+travel_avoid_supports = True
+wall_line_count = 2
+z_seam_type = random
+zig_zaggify_infill = True
