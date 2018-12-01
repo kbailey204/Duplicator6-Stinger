@@ -64,5 +64,5 @@ support_z_distance = 0.2
 top_layers = 4
 travel_avoid_supports = True
 wall_line_count = 2
-z_seam_type = random
+z_seam_type = shortest
 zig_zaggify_infill = True
