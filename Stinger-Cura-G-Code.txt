@@ -1,0 +1,32 @@
+Stinger MMU_D6 Start Stop G-Code
+
+;Start GCode
+;Sliced at: {day} {date} {time}
+G21 ;metric values
+G90 ;absolute positioning
+M82 ;set extruder to absolute mode
+M107 ;start with the fan off
+G28 X0 Y0 ;move X/Y to min endstops
+G28 Z0 ;move Z to min endstops
+G1 Z0.24;move Z down 0.2mm
+G92 E0 ;zero the extruded length
+G1 X80.0 E12.5  F800 ; intro line
+G1 X120.0 E25  F800 ; intro line
+G92 E0 ;zero the extruded length again
+M900 K0.04; Set Linear Advance Parameter
+G1 F{travel_speed}
+;Put printing message on LCD screen
+M117 Printing...
+
+
+;End GCode
+M104 S0                     ;extruder heater off
+M140 S0                     ;heated bed heater off (if you have it)
+G91                         ;relative positioning
+G1 E-1 F300                 ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-5 X-20 Y-20 F{travel_speed} ;move Z up a bit and retract filament even more
+G28 X0 Y0
+G90
+G1 Z160                     ;move Z down 160mm for removal
+M84                         ;steppers off
+G90                         ;absolute positioning
