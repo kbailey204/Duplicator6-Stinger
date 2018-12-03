@@ -46,10 +46,10 @@ retraction_hop = 0.6
 retraction_hop_enabled = True
 retraction_hop_only_when_collides = False
 speed_equalize_flow_enabled = True
-speed_infill = 110
+speed_infill = 100
 speed_layer_0 = 20
 speed_print = 70
-speed_travel = 110
+speed_travel = 100
 speed_wall = =speed_print / 2
 support_angle = 60
 support_interface_enable = True
