@@ -41,7 +41,7 @@ raft_interface_speed = =raft_speed * 0.75
 raft_margin = 5
 raft_speed = 50
 retraction_combing = all
-retraction_extra_prime_amount = 0.096
+retraction_extra_prime_amount = 0.112
 retraction_hop = 0.6
 retraction_hop_enabled = True
 retraction_hop_only_when_collides = False
