@@ -933,9 +933,8 @@
   #define FIL_RUNOUT_INVERTING false // set to true to invert the logic of the sensor.
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
-  #define FILAMENT_RUNOUT_SCRIPT "M600"
+define FILAMENT_RUNOUT_SCRIPT "M600"
 #endif
-
 //===========================================================================
 //=============================== Bed Leveling ==============================
 //===========================================================================
