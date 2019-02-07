@@ -879,9 +879,9 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 195
+#define X_BED_SIZE 200
 #define Y_BED_SIZE 180    // The reduced Y_BED_SIZE is when the bondtech is installed with the stock extruder motor
-//#define Y_BED_SIZE 195    //This Y_BED_SIZE can be used with the stock extruder
+//#define Y_BED_SIZE 200    //This Y_BED_SIZE can be used with the stock extruder
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
